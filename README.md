@@ -10,8 +10,9 @@ This is a simple user-friendly android app with top Reddit publications from htt
  - post description (i.e. title) </br>
  - number of comments</br>
  - thumbnail (click on it -> you will be redirected to the original image with high quality and the ability to save it if you want to) </br>
+
 🔸 Portrait / landscape mode </br>
-🔸 Recycle View
+🔸 Recycle View </br>
 🔸 Upload more top publications by clicking on "more posts" button </br>
 
 **Technology solution**
@@ -32,4 +33,4 @@ This is a simple user-friendly android app with top Reddit publications from htt
 <img align="middle" height="700" src="img/test.png" width="371" alt=""/>
 
 1️⃣ Initialize your project by creating a fork (i.e. clone it from GitHub)</br>
-2️⃣ Just run the app, scroll and enjoy </br>
+2️⃣ Just run the app, scroll and enjoy 🎉 </br>
