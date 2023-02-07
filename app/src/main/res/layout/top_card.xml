@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/topCard"
+        android:background="@color/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="15dp">
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/cardThumbnail"
+                    android:contentDescription="@string/thumbnail"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    tools:ignore="ImageContrastCheck"/>
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/cardThumbnail"
+                    android:layout_marginStart="10dp">
+
+                <TextView
+                        android:id="@+id/cardAuthor"
+                        android:gravity="center_vertical"
+                        android:text="@string/author"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginStart="1dp"/>
+
+                <TextView
+                        android:id="@+id/cardDateTime"
+                        android:gravity="center_vertical"
+                        android:text="@string/date_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardAuthor"
+                        android:scaleType="fitEnd"
+                        android:fontFamily="@font/montserrat_light"
+                        android:textSize="11sp"
+                        android:textColor="#FF717171"
+                        android:layout_marginStart="1dp"/>
+
+                <TextView
+                        android:id="@+id/cardTitle"
+                        android:gravity="center_vertical"
+                        android:text="@string/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardDateTime"
+                        android:fontFamily="@font/montserrat_light"
+                        android:textSize="11sp"
+                        android:textColor="#757575"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="2dp"/>
+
+                <TextView
+                        android:id="@+id/cardComments"
+                        android:text="@string/comments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardTitle"
+                        android:layout_marginStart="1dp"
+                        android:fontFamily="@font/montserrat_light"
+                        android:textSize="11sp"
+                        android:textColor="#717171"
+                        android:textAlignment="viewEnd"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
